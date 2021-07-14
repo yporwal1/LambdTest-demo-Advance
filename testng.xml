@@ -1,0 +1,23 @@
+<suite name="Test_Scenarios" verbose="3" parallel="tests"
+	thread-count="2">
+	<parameter name="Execute" value="cloud" />
+	<parameter name="remoteurl"
+		value="https://yogendrabinmile:yBEQc6HUFnciunDo8LoeHMKUDi5Gq7TczhjFsNAIZYxqh2sihq@hub.lambdatest.com/wd/hub" />
+
+	<test name="LambdaTest Demo Chrome + 86.0 + Windows 10" preserveorder="true">
+		<parameter name="capabilities"
+			value="browserName:chrome;platform:Windows 10;version:86.0;name:LambdaTestDemo Chrome + 86.0 + Windows 10;build:LambdaTest Demo;console:true;network:true;visual:true" />
+		<classes>
+			<class name="steps.LambdaDemoTest" />
+		</classes>
+	</test>
+
+	<test name="LambdaTest Demo MicrosoftEdge + 87.0 + macOS Sierra" preserveorder="true">
+		<parameter name="capabilities"
+			value="browserName:MicrosoftEdge;platform:macOS Sierra;version:87.0;name:LambdaTestDemo MicrosoftEdge + 87.0 + macOS Sierra;build:LambdaTest Demo;console:true;network:true;visual:true" />
+		<classes>
+			<class name="steps.LambdaDemoTest" />
+		</classes>
+	</test>
+
+</suite>
